@@ -19,7 +19,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# gem 'tesseract-ocr', '~> 0.1.6'
+gem 'rmagick', '~> 2.13.2'
+gem 'tesseract-ocr', '~> 0.1.6'
 gem 'brewery_db', '~> 0.2.4'
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -29,6 +30,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development do
   gem 'spring'
   gem 'pry-rails'
+end
+
+group :test, :development do
+  gem 'minitest-rails'
+  gem 'minitest-reporters'
 end
 
 # Use ActiveModel has_secure_password
