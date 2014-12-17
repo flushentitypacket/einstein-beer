@@ -1,7 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# NOTE: Since this file is big and will only get bigger, this should
+# be modified to parse the JSON in batches.
+beers = JSON.parse(File.read('db/seeds/dictionary.json'))
+beers.each { |b| Beer.create!(name: b['name'], data: b) }
