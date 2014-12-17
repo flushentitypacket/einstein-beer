@@ -7,11 +7,10 @@ module Lookup
     def get
       text = Ocr.new.text_for(@image)
       items = text_to_list(text)
-      matcher = FuzzyMatch.new(Beer.all, read: :name)
 
       data = {}
       items.each do |item|
-        data[item] = matcher.find(item)
+        data[item] = Beer.find_by_fuzzy_name(item, limit: 1).first
       end
 
       return data
