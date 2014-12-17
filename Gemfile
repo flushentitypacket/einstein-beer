@@ -22,6 +22,7 @@ gem 'turbolinks'
 gem 'rmagick', '~> 2.13.2'
 gem 'tesseract-ocr', '~> 0.1.6'
 gem 'brewery_db', '~> 0.2.4'
+gem 'fuzzy_match', '~> 2.0.4'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
