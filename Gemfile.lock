@@ -55,7 +55,8 @@ GEM
       ffi
     ffi-inline (0.0.4.3)
       ffi (>= 0.4.0)
-    fuzzy_match (2.0.4)
+    fuzzily (0.3.2)
+      activerecord (>= 2.3.17)
     hashie (2.1.2)
     hike (1.2.3)
     i18n (0.6.11)
@@ -152,7 +153,7 @@ PLATFORMS
 DEPENDENCIES
   brewery_db (~> 0.2.4)
   coffee-rails (~> 4.0.0)
-  fuzzy_match (~> 2.0.4)
+  fuzzily (~> 0.3.2)
   jquery-rails
   minitest-rails
   minitest-reporters
