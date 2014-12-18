@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development do
   gem 'spring'
   gem 'pry-rails'
+  gem 'pry-nav'
 end
 
 group :test, :development do
