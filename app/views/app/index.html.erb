@@ -1,0 +1,6 @@
+<h1>App#index</h1>
+<p>Find me in app/views/app/index.html.erb</p>
+<%= form_tag('/lookup', multipart: true) do %>
+  <%= file_field_tag :image %>
+  <%= submit_tag 'Upload' %>
+<% end %>

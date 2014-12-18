@@ -1,0 +1,17 @@
+<table border="1">
+
+<tr>
+  <th>OCR output</th>
+  <th>Beer name</th>
+  <th>Beer style</th>
+</tr>
+
+<% @rows.each do |row| %>
+  <tr>
+    <% row.each do |item| %>
+      <td><%= item %></td>
+    <% end %>
+  </tr>
+<% end %>
+
+</table>
