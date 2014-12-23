@@ -82,4 +82,4 @@ production:
   <<: *default
   database: einstein-beer_production
   username: einstein-beer
-  password: <%= ENV['EINSTEIN-BEER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['EINSTEIN_BEER_DATABASE_PASSWORD'] %>
