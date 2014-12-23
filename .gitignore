@@ -16,3 +16,5 @@
 /tmp
 
 dictionary.json
+
+secret_token.env
