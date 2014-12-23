@@ -6,4 +6,4 @@ end
 
 beers = client.beers.all.as_json
 
-File.new("#{File.dirname}/dictionary.json", 'w').write(beers.map { |b| b['name'] }.to_json)
+File.new("#{Rails.root}/db/seeds/dictionary.json", 'w').write(beers.map { |b| b['name'] }.to_json)
